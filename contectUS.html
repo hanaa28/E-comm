@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="./css/all.min.css" />
+    <link rel="Stylesheet" href="./css/normalize.css" />
+    <link rel="Stylesheet" href="./css/Index.css" />
+    <link rel="Stylesheet" href="./css/contectUs.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <h2>GoShop</h2>
+                <div class="pages">
+                    <a href="Index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="contectUS.html">Contact US</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- form section -->
+    <div class="fform">
+        <div class="container">
+            <form action=""  onsubmit="login(event)">
+                <div class="data">
+                    <label for="namess">Name</label>
+                    <input type="text" name="name" id="namess" />
+                    <p style="display: none; color: red;" id="errorname" class="error">Name not valid requird</p>
+                </div>
+                <div class="data">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                    <p style="display: none; color: red;" id="erremail" class="error">Name not valid email</p>
+                </div>
+                <div class="data">
+                    <label for="pass">Password</label>
+                    <input type="text" name="pass" id="pass" />
+                    <p style="display: none; color: red;" class="error" id="errpass">password must be greater than 8</p>
+                </div>
+                <div class="datatext">
+                    <textarea name="message"  rows="10" placeholder="enter message"></textarea>
+                </div>
+                
+                <div class="btn">
+                <input type="submit" value="Contect US"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="foot-content">
+                <div class="foot">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="rightt">
+                    <a href="#header"> <i class="fa-regular fa-circle-up right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contectUs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    height: 100vh;
+    position: relative;
+  }
+.fform {
+    margin-top: 30px;
+}
+
+.data {
+    position: relative;
+    margin: 30px auto;
+
+}
+
+.datatext {
+    position: relative;
+    margin: 30px auto;
+    height: 150px;
+
+}
+
+.data input {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65%;
+    height: 28px;
+    outline: none;
+    border: 2px #00303f solid;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+
+.fform label {
+    font-size: 20px;
+    color: #00303f;
+}
+
+textarea {
+    position: absolute;
+    left: 100px;
+    width: 65%;
+    height: 150px;
+    outline: none;
+    border: 2px #00303f solid;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+.btn {
+    height: 50px;
+    position: relative;
+}
+
+.btn input {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border: 2px #00303f solid;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    background-color: #00303f;
+    font-size: 20px;
+    cursor: pointer;
+}
+.error{
+    position: absolute;
+    left: 100px;
+    padding: 5px 30px;
+}
+.footer{
+    background-color: #00303F;
+    background-color: #00303F;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    }
+    .foot-content{
+        position: relative;
+        height: 70px;
+    }
+    .foot{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .footer i{
+        font-size: 40px;
+        margin-left: 20px;
+        color: white;
+    }
+    .rightt{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+        .rightt i{
+            margin-left: 0;
+        }

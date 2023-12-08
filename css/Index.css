@@ -1,0 +1,270 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.header-content {
+  position: relative;
+  background-color: white;
+}
+
+.header-content .pages {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.header-content a {
+  padding: 10px 5px;
+  font-size: 18px;
+  color: #00303F;
+}
+
+.header-content h2 {
+  padding: 10px 5px;
+  color: #00303F;
+
+}
+
+a:hover {
+  background-color: #CAE4DB;
+  border-radius: 5px;
+}
+
+.slider {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F5F4F4;
+
+}
+
+.slider img {
+  width: 60%;
+  height: 250px;
+
+}
+
+.slider-content {
+  position: relative;
+}
+
+.slider-content .rightIcon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #00303F;
+  cursor: pointer;
+}
+
+.slider-content .leftIcon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #00303F;
+  cursor: pointer;
+
+}
+@media (max-width: 992px) {
+  .slider img {
+    width: 80%;
+    height: 220px;
+  
+  }
+}
+
+/* Items */
+
+.Items{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.Items .buttons{
+  margin-bottom: 20px;
+  
+}
+.Items .buttons button{
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 10px;
+  /* color: #00303F; */
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+}
+button{
+  cursor: pointer;
+}
+.Items .buttons a:hover{
+background-color: #CAE4DB;
+}
+.Items .all-Items, .Items .all-Carts{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 5%;
+
+}
+.Items .all-Carts{
+  width: 60%;
+  margin: 50px auto 20px ;
+ 
+}
+.Items .Item{
+  /* width: 220px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 20px;
+/* 
+  margin: 0 auto 20px; */
+}
+.Items  .Item img{
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.Items  .Item p{
+  font-size: larger;
+  color: #00303f;
+  margin: 5px auto;
+}
+.Items .all-Items .Item button{
+  border-radius: 7px;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  background: #00303f;
+  margin: 5px auto;
+  margin-bottom: 15px;
+}
+.footer{
+  background-color: #436f7c;
+  
+  margin-top: 150px;
+  
+  }
+  .foot-content{
+      position: relative;
+      height: 70px;
+  }
+  .foot{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .footer i{
+      font-size: 40px;
+      margin-left: 20px;
+      color: white;
+  }
+  .rightt{
+    position: fixed;
+    bottom: 10px;
+    right: -30px;
+    transition: 0.2s;
+    color: #00303F;
+    cursor: pointer;
+    font-size: 30px;
+      
+      }
+      /* .rightt i{
+        position: fixed;
+        bottom: 10px;
+        right: -30px;
+        transition: 0.2s;
+        color: #00303F;
+        cursor: pointer;
+      } */
+    .show {
+        right: 10px;
+      }
+
+      /* Item style */
+      .price{
+        position: relative;
+      }
+      .price i:first-child{
+        position: absolute;
+        right:80px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color:"#00303F";
+        cursor: pointer;
+      }
+      .price .mm {
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: "#00303F";
+        cursor: pointer;
+    }
+    @media (max-width: 768px){
+.Items .all-Carts {
+  width: 100%;
+  margin: 50px auto 20px;
+ 
+}
+}
